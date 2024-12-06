@@ -1,0 +1,404 @@
+/* General Styles */
+/* Body Background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/download.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Wrapper for Main Content */
+.main-content {
+  position: relative;
+  z-index: 1; /* Ensure it stays above the blurred background */
+  background: white; /* White background for clarity */
+  padding: 20px;
+}
+
+/* Blur Effect for Background and Footer */
+.background-blur,
+footer {
+  position: relative;
+  z-index: 0; /* Ensure blur remains below other content */
+  filter: blur(5px); /* Apply blur effect */
+}
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav .logo img {
+  max-width: 95px;
+  height: auto;
+}
+
+nav .site-name {
+  font-size: 24px;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* Slideshow Section */
+.hero {
+  display: flex;
+  flex-direction: column; /* Stack the title and slideshow content vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Ensure it takes full viewport height */
+  text-align: center; /* Center the text horizontally */
+  background-color: white; /* Optional background color */
+}
+
+.hero h2 {
+  font-size: 32px; /* Set font size for the title */
+  margin-bottom: 20px; /* Add space between the title and slideshow */
+  color: #333; /* Optional color */
+}
+/* Adjust the Slideshow Section */
+.slideshow-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Space between slideshow and text */
+  width: 90%; /* Set container width to 90% of the parent/container width */
+  margin: 0 auto; /* Center the container horizontally */
+  border: 3px solid #ddd; /* 2D border effect */
+  border-radius: 15px; /* Rounded corners */
+  padding: 15px; /* Add spacing inside the border */
+  background-color: #fff; /* Background color for the container */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for 2D effect */
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  width: 50%; /* Keeps the slideshow container at 78% width */
+  height: 50; /* Fixed height for slideshow box (adjustable as per need) */
+  margin: 0 auto; /* Center the slideshow horizontally */
+  overflow: hidden; /* Hide anything overflowing */
+  border: 5px solid rgb(59, 58, 58); /* White border around the container */
+  border-radius: 20px; /* Round the corners */
+}
+
+/* Slideshow Images */
+  .slide img {
+    align-items: center;
+    max-width: 100%; /* Ensures the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensures the image doesn't exceed the container's height */
+    object-fit: contain; /* Ensures the image fits within the container while maintaining aspect ratio */
+    display: block; /* Removes any space below the image */
+  }
+
+  .side-content {
+    max-width: 340px; /* Fixed width for side text */
+    padding: 10px;
+    text-align: justify; /* Ensures clean alignment */
+  }
+  
+  .side-content p {
+    font-size: 16px;
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+  }
+  
+/* About Section */
+#about {
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks content vertically */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Centers the text */
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+/* About Section */
+#about {
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 90%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* About Content (Image) */
+.about-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+.about-image {
+  width: 100%;
+  max-width: 290px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Slideshow */
+.paragraph-slideshow {
+  width: 70%; /* Medium width for the paragraph container */
+  max-width: 500px;
+  margin: 0 auto; /* Center the paragraph container */
+  text-align: center;
+  position: relative;
+}
+
+.paragraph-container {
+  min-height: 300px; /* Consistent height for the paragraph container */
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Paragraphs */
+.about-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #292626;
+  display: none;
+  text-align: justify;
+}
+
+.about-paragraph:first-child {
+  display: block;
+}
+
+/* Arrow Buttons */
+.slideshow-controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.arrow-btn:hover {
+  background-color: #0f0f0f;
+}
+
+
+/* Gallery Section with 3D Border Effect */
+#gallery {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+
+  /* 3D Border Effect */
+  border: 3px solid #ddd; /* Base border */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), /* Bottom right shadow */
+              -5px -5px 10px rgba(255, 255, 255, 0.5); /* Top left highlight */
+  padding: 90px; /* Add spacing inside the border */
+  
+  /* Add space below this section */
+  margin-bottom: 60px;
+}
+
+#gallery h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 15px; /* Spacing between items */
+  justify-items: center; /* Center align items */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px; /* Set the size of each image */
+  aspect-ratio: 1 / 1; /* Ensures a square shape */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.gallery-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-text {
+  opacity: 1;
+  transform: translateY(0); /* Slide text up on hover */
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns for small screens */
+  }
+}
+
+
+/* Video Section Layout */
+#video {
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  display: flex; /* Flexbox for centering the grid */
+  flex-direction: column; /* Ensure vertical layout for the title and grid */
+  justify-content: center; /* Center the grid vertically */
+  align-items: center; /* Center the grid horizontally */
+
+  /* 2D Border Effect */
+  border: 3px solid #ddd;
+  border-radius: 15px;
+  padding: 15px;
+
+  /* Add space above this section */
+  margin-top: 50px;
+}
+
+/* Grid Layout */
+.video-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for 2x2 grid */
+  gap: 40px 50px; /* Horizontal and vertical spacing between videos */
+  justify-content: center; /* Horizontally align videos */
+  border: 3px solid #ddd; /* 2D border effect */
+  border-radius: 15px; /* Rounded corners */
+  padding: 15px; /* Add spacing inside the border */
+}
+
+/* Video Item Styling */
+.video-item {
+  max-width: 400px; /* Optional: Limit the video size */
+  text-align: center; /* Center align text below each video */
+}
+
+.video {
+  width: 100%;
+  height: 250px; /* Uniform height for videos */
+  border-radius: 8px; /* Rounded corners for style */
+  border: 2px solid #ddd; /* Optional border styling */
+}
+
+/* Video Text Styling */
+.video-text {
+  margin-top: 10px; /* Space between the video and text */
+  font-size: 16px; /* Font size for text */
+  color: #333; /* Dark color for text */
+  font-family: Arial, sans-serif; /* Consistent font styling */
+}
+
+/* Review Section */
+#reviews {
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#reviews h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Table Styling */
+.review-table-container {
+  margin: 0 auto;
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+.review-table {
+  width: 100%;
+  max-width: 1000px; /* Limit the table's width */
+  margin: 0 auto;
+  border-collapse: collapse; /* Clean table borders */
+}
+
+.review-table th,
+.review-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.review-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.review-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.review-table img.review-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Footer Section */
+footer {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for footer */
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+}
